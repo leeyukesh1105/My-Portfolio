@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Lee Yukesh - Creative Developer, Video Editor, and Vlogger. Explore my projects, skills, and creative works.">
+  <title>Lee Yukesh | Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Custom Scrollbar Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="header-container">
+      <a href="#" class="logo">Yukesh<span class="red-dot">.</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">My Works</a></li>
+          <li><a href="#experience">Timeline</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="admin-trigger" class="btn btn-icon" title="Creator Portal" aria-label="Open Creator Portal">
+          <i class="fa-solid fa-lock"></i>
+        </button>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer">
+    <div class="drawer-header">
+      <a href="#" class="logo">Yukesh<span class="red-dot">.</span></a>
+      <button class="drawer-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#works">My Works</a></li>
+      <li><a href="#experience">Timeline</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="drawer-overlay"></div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-content">
+        <span class="hero-greeting animate-on-scroll slide-up">Hello, I am</span>
+        <h1 class="hero-title animate-on-scroll slide-up delay-1">Lee Yukesh</h1>
+        <h2 class="hero-subtitle animate-on-scroll slide-up delay-2">
+          I'm a <span id="typewriter-text" class="text-glow"></span><span class="typewriter-cursor">|</span>
+        </h2>
+        <p class="hero-desc animate-on-scroll slide-up delay-3">
+          Explorer by heart, creator by mindset, and problem-solver by nature. I build unique web experiences and craft engaging visual stories.
+        </p>
+        <div class="hero-btns animate-on-scroll slide-up delay-4">
+          <a href="#works" class="btn btn-primary">View My Works <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-outline">Let's Connect</a>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <a href="#about" aria-label="Scroll down">
+          <span>Scroll Down</span>
+          <i class="fa-solid fa-chevron-down bounce"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- About & Skills Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">About & Skills</h2>
+        <div class="about-grid">
+          
+          <!-- About Card -->
+          <div class="about-card animate-on-scroll slide-right">
+            <div class="card-glow"></div>
+            <h3>My Philosophy</h3>
+            <p>
+              I enjoy learning new skills, discovering new places, and taking on meaningful challenges. My goal is to create value through dedication, creativity, and hard work.
+            </p>
+            <p>
+              Whether it is editing a cinematic vlog using DaVinci Resolve, leveraging AI tools to optimize workflows, or programming responsive layouts, I focus on delivering quality and aesthetic precision.
+            </p>
+            <div class="about-quick-info">
+              <div class="info-item">
+                <i class="fa-solid fa-envelope red-text"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p><a href="mailto:leeyukesh11@gmail.com">leeyukesh11@gmail.com</a></p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-phone red-text"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p><a href="tel:+919150337244">+91 9150337244</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills Card -->
+          <div class="skills-card animate-on-scroll slide-left">
+            <div class="card-glow"></div>
+            <h3>Core Expertise</h3>
+            <div class="skills-list">
+              
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>DaVinci Resolve (Video Editing)</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>AI Tools (Prompting & Automation)</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Website Development (Frontend/JS)</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="width: 80%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>MS Office (Word, Excel, PowerPoint)</span>
+                  <span>75%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="width: 75%;"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- My Works Section -->
+    <section id="works" class="works">
+      <div class="container">
+        <div class="works-header animate-on-scroll">
+          <div>
+            <h2 class="section-title">My Works</h2>
+            <p class="section-subtitle">A collection of projects, edited videos, and web creations.</p>
+          </div>
+          <!-- Admin Status Indicator -->
+          <div id="admin-status" class="admin-status-badge hidden">
+            <span class="badge-dot"></span>
+            <span>Creator Mode Active</span>
+            <button id="logout-btn" title="Logout" aria-label="Exit Creator Mode"><i class="fa-solid fa-power-off"></i></button>
+          </div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-container animate-on-scroll delay-1">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="video">Video Editing</button>
+          <button class="filter-btn" data-filter="web">Web Dev</button>
+          <button class="filter-btn" data-filter="ai">AI Tools</button>
+          <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid animate-on-scroll delay-2" id="projects-container">
+          <!-- Projects will be rendered dynamically here -->
+          <div class="loading-spinner">
+            <i class="fa-solid fa-circle-notch fa-spin"></i> Loading projects...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="timeline-section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Creative Timeline</h2>
+        <div class="timeline animate-on-scroll">
+          
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <span class="timeline-date">2025 - Present</span>
+              <h3>Creative Developer & AI Explorer</h3>
+              <p>Integrating state-of-the-art AI generation tools and automations into web development workflows and creative pipelines, producing custom web apps and dynamic solutions.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <span class="timeline-date">2024 - 2025</span>
+              <h3>Video Editor & Content Creator</h3>
+              <p>Refining post-production workflow inside DaVinci Resolve. Editing cinematic vlogs, promotional reels, and YouTube videos focusing on clean cuts, sound design, and color grading.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <span class="timeline-date">2023 - 2024</span>
+              <h3>Blogging & Vlogging Journey</h3>
+              <p>Started capturing travel, tech, and lifestyle adventures. Built a digital footprint as a Vlogger, creating video assets and establishing storyboards for visual communication.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Get In Touch</h2>
+        <div class="contact-grid">
+          
+          <!-- Contact Info -->
+          <div class="contact-info animate-on-scroll slide-right">
+            <h3>Let's collaborate on your next big idea</h3>
+            <p>
+              I am open to collaborations, video editing gigs, development projects, or general inquiries. Drop a message and let's make something amazing.
+            </p>
+            
+            <div class="contact-details">
+              <div class="contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <span>Email</span>
+                  <a href="mailto:leeyukesh11@gmail.com">leeyukesh11@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <i class="fa-brands fa-instagram"></i>
+                <div>
+                  <span>Instagram</span>
+                  <a href="https://instagram.com/__lee_yukesh__" target="_blank">@__lee_yukesh__</a>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <span>Phone</span>
+                  <a href="tel:+919150337244">+91 9150337244</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-container animate-on-scroll slide-left">
+            <form id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" id="contact-name" required placeholder=" ">
+                  <label for="contact-name">Your Name</label>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="contact-email" required placeholder=" ">
+                  <label for="contact-email">Your Email</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" id="contact-subject" required placeholder=" ">
+                <label for="contact-subject">Subject</label>
+              </div>
+              <div class="form-group">
+                <textarea id="contact-message" required rows="6" placeholder=" "></textarea>
+                <label for="contact-message">Message</label>
+              </div>
+              <button type="submit" class="btn btn-primary w-full">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+            <div id="form-feedback" class="form-feedback hidden"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Lee Yukesh. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="mailto:leeyukesh11@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://instagram.com/__lee_yukesh__" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="tel:+919150337244" title="Call"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- Passcode Auth Modal -->
+  <div id="auth-modal" class="modal">
+    <div class="modal-content card-glass">
+      <button class="modal-close" aria-label="Close Auth Modal"><i class="fa-solid fa-xmark"></i></button>
+      <h3>Enter Passcode</h3>
+      <p class="modal-desc">Unlocks the Creator Portal to add/remove projects.</p>
+      <form id="auth-form">
+        <div class="form-group">
+          <input type="password" id="auth-passcode" required placeholder=" ">
+          <label for="auth-passcode">Secret Passcode</label>
+        </div>
+        <button type="submit" class="btn btn-primary w-full">Verify <i class="fa-solid fa-shield-halved"></i></button>
+      </form>
+      <div id="auth-feedback" class="form-feedback error hidden"></div>
+    </div>
+    <div class="modal-overlay"></div>
+  </div>
+
+  <!-- Add Project Modal -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content card-glass project-form-modal">
+      <button class="modal-close" aria-label="Close Project Modal"><i class="fa-solid fa-xmark"></i></button>
+      <h3>Add New Work</h3>
+      <p class="modal-desc">Upload a project to your live portfolio.</p>
+      
+      <form id="project-form">
+        <div class="form-group">
+          <input type="text" id="proj-title" required placeholder=" ">
+          <label for="proj-title">Project Title</label>
+        </div>
+
+        <div class="form-group">
+          <textarea id="proj-desc" required rows="3" placeholder=" "></textarea>
+          <label for="proj-desc">Short Description</label>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <select id="proj-category" required>
+              <option value="" disabled selected hidden></option>
+              <option value="video">Video Editing</option>
+              <option value="web">Web Dev</option>
+              <option value="ai">AI Tools</option>
+              <option value="other">Other</option>
+            </select>
+            <label for="proj-category" class="select-label">Category</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="proj-tags" required placeholder=" ">
+            <label for="proj-tags">Tags (comma-separated, e.g., DaVinci, Vlog)</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input type="url" id="proj-image" placeholder=" ">
+          <label for="proj-image">Image/Thumbnail URL (e.g., Unsplash, YouTube Thumbnail, Imgur)</label>
+          <small class="input-tip">Leave blank for a default creative placeholder.</small>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <input type="url" id="proj-link" placeholder=" ">
+            <label for="proj-link">Work Link (e.g. YouTube Video, Live Site)</label>
+          </div>
+          <div class="form-group">
+            <input type="url" id="proj-github" placeholder=" ">
+            <label for="proj-github">GitHub Link (optional)</label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-full">Publish Project <i class="fa-solid fa-cloud-arrow-up"></i></button>
+      </form>
+    </div>
+    <div class="modal-overlay"></div>
+  </div>
+
+  <!-- Firebase Compat SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
