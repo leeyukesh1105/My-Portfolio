@@ -225,6 +225,7 @@ section {
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: -0.04em;
+  color: #f5f5f7;
 }
 
 .red-text {
@@ -261,7 +262,7 @@ header {
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: -0.04em;
-  color: var(--accent-red);
+  color: #ae0900;
 }
 
 .nav-links {
