@@ -8,20 +8,20 @@
   --bg-card-hover: rgba(26, 26, 36, 0.85);
   --border-glass: rgba(255, 255, 255, 0.05);
   --border-active: rgba(255, 59, 48, 0.35);
-  
+
   --accent-red: #ff3b30;
   --accent-red-hover: #ff5247;
   --accent-red-rgb: 255, 59, 48;
   --accent-red-glow: rgba(255, 59, 48, 0.25);
-  
+
   --text-primary: #f5f5f7;
   --text-secondary: #a1a1a6;
   --text-muted: #6e6e73;
-  
+
   /* Fonts */
   --font-heading: 'Space Grotesk', sans-serif;
   --font-body: 'Outfit', sans-serif;
-  
+
   /* Transitions & Radii */
   --transition-smooth: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
   --radius-sm: 8px;
@@ -53,7 +53,12 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -69,13 +74,17 @@ ul {
   list-style: none;
 }
 
-img, video {
+img,
+video {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -147,7 +156,7 @@ section {
   transform: translate(-50%, -50%);
   width: 40vw;
   height: 40vw;
-  background: radial-gradient(circle, rgba(255, 59, 48, 0.12) 0%, rgba(0,0,0,0) 70%);
+  background: radial-gradient(circle, rgba(255, 59, 48, 0.12) 0%, rgba(0, 0, 0, 0) 70%);
   z-index: -1;
   pointer-events: none;
   filter: blur(50px);
@@ -212,7 +221,10 @@ section {
 }
 
 .red-dot {
-  color: var(--accent-red);
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
 }
 
 .red-text {
@@ -249,6 +261,7 @@ header {
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: -0.04em;
+  color: var(--accent-red);
 }
 
 .nav-links {
@@ -448,16 +461,18 @@ header {
   margin-top: 3rem;
 }
 
-.about-card, .skills-card {
+.about-card,
+.skills-card {
   padding: 3rem;
   position: relative;
   overflow: hidden;
   transition: var(--transition-smooth);
 }
 
-.about-card:hover, .skills-card:hover {
+.about-card:hover,
+.skills-card:hover {
   border-color: rgba(255, 59, 48, 0.15);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
 }
 
 .card-glow {
@@ -466,12 +481,13 @@ header {
   right: -15%;
   width: 150px;
   height: 150px;
-  background: radial-gradient(circle, rgba(255, 59, 48, 0.08) 0%, rgba(0,0,0,0) 70%);
+  background: radial-gradient(circle, rgba(255, 59, 48, 0.08) 0%, rgba(0, 0, 0, 0) 70%);
   pointer-events: none;
   filter: blur(20px);
 }
 
-.about-card h3, .skills-card h3 {
+.about-card h3,
+.skills-card h3 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   position: relative;
@@ -651,7 +667,7 @@ header {
   border-radius: var(--radius-md);
   overflow: hidden;
   height: 380px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: var(--transition-smooth);
   border: 1px solid var(--border-glass);
 }
@@ -1016,17 +1032,17 @@ header {
   transition: var(--transition-smooth);
 }
 
-.form-group select ~ label {
+.form-group select~label {
   top: 1rem;
 }
 
 /* Trigger move-up of label when focus or text exists */
-.form-group input:focus ~ label,
-.form-group input:not(:placeholder-shown) ~ label,
-.form-group textarea:focus ~ label,
-.form-group textarea:not(:placeholder-shown) ~ label,
-.form-group select:focus ~ label,
-.form-group select:valid ~ label {
+.form-group input:focus~label,
+.form-group input:not(:placeholder-shown)~label,
+.form-group textarea:focus~label,
+.form-group textarea:not(:placeholder-shown)~label,
+.form-group select:focus~label,
+.form-group select:valid~label {
   top: -0.6rem;
   left: 0.8rem;
   font-size: 0.75rem;
@@ -1192,13 +1208,23 @@ footer {
    ANIMATIONS & SCROLL EFFECTS
    ========================================================================== */
 @keyframes blink {
-  50% { opacity: 0; }
+  50% {
+    opacity: 0;
+  }
 }
 
 @keyframes pulse-red {
-  0% { box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.6); }
-  70% { box-shadow: 0 0 0 8px rgba(255, 59, 48, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(255, 59, 48, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.6);
+  }
+
+  70% {
+    box-shadow: 0 0 0 8px rgba(255, 59, 48, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 59, 48, 0);
+  }
 }
 
 .bounce {
@@ -1206,9 +1232,22 @@ footer {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-8px); }
-  60% { transform: translateY(-4px); }
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-8px);
+  }
+
+  60% {
+    transform: translateY(-4px);
+  }
 }
 
 /* Intersection observer classes */
@@ -1232,10 +1271,21 @@ footer {
 }
 
 /* Delay classes */
-.delay-1 { transition-delay: 0.15s; }
-.delay-2 { transition-delay: 0.3s; }
-.delay-3 { transition-delay: 0.45s; }
-.delay-4 { transition-delay: 0.6s; }
+.delay-1 {
+  transition-delay: 0.15s;
+}
+
+.delay-2 {
+  transition-delay: 0.3s;
+}
+
+.delay-3 {
+  transition-delay: 0.45s;
+}
+
+.delay-4 {
+  transition-delay: 0.6s;
+}
 
 /* ==========================================================================
    MEDIA QUERIES (RESPONSIVENESS)
@@ -1244,39 +1294,40 @@ footer {
   section {
     padding: 6rem 0;
   }
-  
+
   .hero-title {
     font-size: 3.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.8rem;
   }
-  
+
   .about-grid,
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  
-  .about-card, .skills-card {
+
+  .about-card,
+  .skills-card {
     padding: 2.5rem;
   }
-  
+
   .timeline::after {
     left: 31px;
   }
-  
+
   .timeline-item {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
-  
+
   .timeline-item::after {
     left: 24px;
   }
-  
+
   .right {
     left: 0%;
   }
@@ -1286,28 +1337,28 @@ footer {
   .nav-links {
     display: none;
   }
-  
+
   .mobile-nav-toggle {
     display: block;
   }
-  
+
   .hero-title {
     font-size: 2.8rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.5rem;
   }
-  
+
   .form-row {
     grid-template-columns: 1fr;
     gap: 0;
   }
-  
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .footer-content {
     flex-direction: column;
     gap: 1.5rem;
